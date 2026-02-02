@@ -54,8 +54,8 @@ include!(concat!(env!("OUT_DIR"), "/isodata.rs"));
 
 #[derive(PartialEq, Eq)]
 pub struct CurrencySymbol {
-    pub symbol: String,
-    pub subunit_symbol: Option<String>,
+    pub symbol: &'static str,
+    pub subunit_symbol: Option<&'static str>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -85,10 +85,10 @@ impl CurrencySymbol {
     /// Data for the symbols was collected from
     /// [https://en.wikipedia.org/wiki/Currency_symbol#List_of_presently-circulating_currency_symbols]()
     ///
-    pub fn new(symbol: &str, subunit_symbol: Option<&str>) -> CurrencySymbol {
+    pub fn new(symbol: &'static str, subunit_symbol: Option<&'static str>) -> CurrencySymbol {
         CurrencySymbol {
-            symbol: symbol.to_owned(),
-            subunit_symbol: subunit_symbol.map(|v| v.to_owned()),
+            symbol,
+            subunit_symbol: subunit_symbol.map(|v| v),
         }
     }
 }
