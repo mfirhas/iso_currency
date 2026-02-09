@@ -159,7 +159,7 @@ fn generate_numeric_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::EUR.numeric(), 978);
         /// ```
@@ -190,7 +190,7 @@ fn name_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::EUR.name(), "Euro");
         /// ```
@@ -219,7 +219,7 @@ fn code_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::EUR.code(), "EUR");
         /// ```
@@ -261,7 +261,7 @@ fn used_by_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::{Currency, Country};
+        /// use iso_currency_lib::{Currency, Country};
         ///
         /// assert_eq!(
         ///     Currency::CHF.used_by(),
@@ -303,7 +303,7 @@ fn symbol_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(format!("{}", Currency::EUR.symbol()), "€");
         /// assert_eq!(format!("{}", Currency::XXX.symbol()), "¤");
@@ -333,7 +333,7 @@ fn from_code_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::from_code("EUR"), Some(Currency::EUR));
         /// ```
@@ -366,7 +366,7 @@ fn from_numeric_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::from_numeric(978), Some(Currency::EUR));
         /// ```
@@ -403,7 +403,7 @@ fn exponent_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::EUR.exponent(), Some(2));
         /// assert_eq!(Currency::JPY.exponent(), Some(0));
@@ -441,7 +441,7 @@ fn subunit_fraction_method(data: &[IsoData]) -> TokenStream {
         /// # Example
         ///
         /// ```
-        /// use iso_currency::Currency;
+        /// use iso_currency_lib::Currency;
         ///
         /// assert_eq!(Currency::EUR.subunit_fraction(), Some(100));
         /// ```

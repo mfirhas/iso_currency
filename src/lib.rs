@@ -13,7 +13,7 @@
 //! # Examples
 //!
 //! ```
-//! use iso_currency::{Currency, Country};
+//! use iso_currency_lib::{Currency, Country};
 //!
 //! assert_eq!(Currency::EUR.name(), "Euro");
 //! assert_eq!(Currency::EUR.numeric(), 978);
@@ -30,7 +30,7 @@
 //! assert_eq!(Currency::VES.is_superseded(), Some(Currency::VED));
 //! assert_eq!(Currency::VED.is_superseded(), None);
 //! assert_eq!(Currency::VES.latest(), Currency::VED);
-//! assert_eq!(Currency::BOV.flags(), vec![iso_currency::Flag::Fund]);
+//! assert_eq!(Currency::BOV.flags(), vec![iso_currency_lib::Flag::Fund]);
 //! ```
 
 #![cfg_attr(docsrs, feature(doc_cfg))]

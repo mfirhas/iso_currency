@@ -1,11 +1,11 @@
 [package]
-name = "iso_currency"
+name = "iso_currency_lib"
 description = "ISO 4217 currency codes"
-version = "0.5.3"
+version = "0.1.0"
 authors = ["Rostislav Raykov <z@zbrox.org>"]
 edition = "2018"
 license = "MIT"
-repository = "https://github.com/zbrox/iso_currency"
+repository = "https://github.com/mfirhas/iso_currency"
 documentation = "https://docs.rs/iso_currency/"
 homepage = "https://github.com/zbrox/iso_currency"
 readme = "README.md"

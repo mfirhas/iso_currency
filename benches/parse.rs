@@ -7,15 +7,15 @@ fn main() {
 
 #[divan::bench]
 fn parse_code() {
-    iso_currency::Currency::from_code("EUR").unwrap();
+    iso_currency_lib::Currency::from_code("EUR").unwrap();
 }
 
 #[divan::bench]
 fn parse_numeric() {
-    iso_currency::Currency::from_numeric(978).unwrap();
+    iso_currency_lib::Currency::from_numeric(978).unwrap();
 }
 
 #[divan::bench]
 fn from_str() {
-    iso_currency::Currency::from_str("SEK").unwrap();
+    iso_currency_lib::Currency::from_str("SEK").unwrap();
 }
