@@ -80,3 +80,6 @@ The `Currency` enum and its implementations are generated from the `isodata.tsv`
 One thing to watch out for is to have always the same amount of fields on a row, even if an optional field is missing. This means on each row you should have **6** tabs.
 
 The `used_by_alpha2` column is a bit different. It can be empty but if not it includes a list, separated by a semicolon (without a trailing semicolon), of `ISO 3166-1` 2-letter country codes in all caps.
+
+---
+*NOTE: This forked version use and return name, symbol, and subunit_symbol as static.*
